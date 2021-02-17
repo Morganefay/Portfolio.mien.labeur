@@ -1,0 +1,41 @@
+@keyframes RevealText {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes Blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .container {
+    font-family: "Consolas", fixed-width;
+    margin: 0 auto;
+    max-width: 70%;
+    padding-top: 120px;
+  }
+  .cursor-blink {
+    animation: RevealText 3s steps(10, end);
+    display: inline-block;
+    font-size: 80px;
+    overflow: hidden;
+    position: relative;
+    white-space: no-wrap;
+    width: 440px;
+    
+  }
+  
+  .cursor {
+    animation: Blink 1s ease-in 0s infinite;
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+    top: -40px;
+  }
+  .question {
+    font-size: 30px;
+  }
+  
