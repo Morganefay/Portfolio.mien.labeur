@@ -12,28 +12,33 @@
     }
   }
   .container {
-    font-family: "Consolas", fixed-width;
+    /*font-family: "Consolas", fixed-width;*/
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 80%;
     padding-top: 120px;
   }
-  .cursor-blink {
+  .cursor-blink{
+    visibility:hidden;
+    font-size: 80px;
+    margin: 10px;
+  }
+  .cursor-blink.animated {
     animation: RevealText 3s steps(10, end);
     display: inline-block;
-    font-size: 80px;
+    visibility: visible ;
     overflow: hidden;
     position: relative;
     white-space: no-wrap;
-    width: 440px;
-    
+    width: 440px; 
+    color: #484a55;
   }
-  
   .cursor {
     animation: Blink 1s ease-in 0s infinite;
     font-size: 80px;
     font-weight: bold;
     position: relative;
     top: -40px;
+    color: #484a55;
   }
   .question {
     font-size: 30px;

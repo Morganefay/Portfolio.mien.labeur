@@ -1,8 +1,12 @@
 body {
     min-height: calc(100vh - 1rem);
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-  }
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+h2 {
+	font-family: "Consolas";
+}
 
 
 /* Header Section
@@ -27,6 +31,7 @@ header {
 	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 }
+
 .title {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
@@ -85,6 +90,7 @@ svg {
 	opacity: 0;
 	top: -100px;
 	padding-bottom: 6px;
+	font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 766px) {
@@ -241,26 +247,68 @@ opacity: 0;
 	padding: 100px 0 100px 0;
 }
 .image {
-	background-color: #5a5a5a;
 	width: 100%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	transition: .5s;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	box-shadow: 0 0 3px #496b7b;
+	border-radius: 5px;
 }
 .image:hover {
-	opacity: 0.6;
+	opacity: 0.8;
 	transition: .3s;
-	background-image: url(../images/hoverbg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
+/* Resume Section
+********************************************************************* */
+#resume{
+	margin-bottom: 15px;
+}
+.resume-btn {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a.pink-button {
+    font-size: 12px;
+	margin: 0 10px;
+}
+
+.fab{
+	font-size: 2rem;
+	color: #88a3c7;
+	margin: 0 10px;
+}
+
+.resume-view {
+    height: 400px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+	display: flex;
+	padding: 20px;
+}
+
+.xp-1 {
+    border-right: 5px solid #26b615;
+    height: 400px;
+    width: 49%;
+}
+
+.xp-2 {
+    height: 400px;
+    width: 49%;
+}
+
+.xp-1 div{
+    text-align: end;
+}
+
 /* Contact Section
 ********************************************************************* */
-#contact {
-	padding: 100px 0 100px 0;
-}
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+input[type="email"], input[type="text"], textarea {
 	height: 38px;
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
 	background-color: #F5F5F5;
@@ -273,7 +321,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 textarea {
 	min-height: 250px;
 }
-input[type="submit"] {
+input[type="submit"], .pink-button {
 	display: inline-block;
 	height: 38px;
 	padding: 0 30px;
@@ -286,15 +334,27 @@ input[type="submit"] {
 	text-transform: uppercase;
 	text-decoration: none;
 	white-space: nowrap;
-	background: #5fc3e4;
+	background: #af86ad;
 	border-radius: 0px;
 	border: 0;
 	cursor: pointer;
 	box-sizing: border-box;
 }
-input[type="submit"]:hover {
-	background: #e55d87;
+input[type="submit"]:hover, .pink-button:hover {
+	background: #88a3c7;
 	text-decoration: none;
+	color: #fff;
+}
+
+.row.submit-contact {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+.contact-box {
+    text-align: center;
 }
 /* Footer Section
 ********************************************************************* */

@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/gallery.css">
     
     <title>Marie Collin</title>
 </head>
@@ -227,38 +231,47 @@
 
 <main>
       <div class="container" id="about">
-        <h1 class="cursor-blink about">About_me</h1>
+        <h2 class="cursor-blink about">About_me</h2>
         <span class="cursor" >_</span>
         <p class="question">Want to Know more about me ?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
       </div>
 
       <div class="container">
-        <h1 class="cursor-blink portfolio">Portfolio</h1>
+        <h2 class="cursor-blink portfolio">Portfolio</h2>
         <span class="cursor">_</span>
         <p class="question">Want to see my work ?</p>
         <section id="portfolio">
-          <div class="content">
-            <div class="block"></div>
-            <div class="row">
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work One"/></div>
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Two"/></div>
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Three"/></div>
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Four"/></div>
-            </div>
-            <div class="row" style="margin-top: 30px;">
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Five"/></div>
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Six"/></div>
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Seven"/></div>
-              <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Eight"/></div>
-            </div>
-          </div>
+
+          <div class="singleProject"><img src="images/todo.png" class="image" alt="Work One"/></div>
+          <div class="singleProject"><a href="JeuDuMorpion/index.html"><img src="images/morpion.png" class="image" alt="Work Two"/></a></div>
+          <div class="singleProject"><img src="images/AppMétéo.png" class="image" alt="Work Three"/></div>
+          <div class="singleProject"><img src="images/Pomodoro.png" class="image" alt="Work Four"/></div>
+          <div class="singleProject"><img src="images/Memory.png" class="image" alt="Work Five"/></div>
+          <div class="singleProject"><img src="images/VisualiseurAudio.png" class="image" alt="Work Six"/></div>
         </section>
+      </div>  
         
       <div class="container" id="resume">
-        <h1 class="cursor-blink">My_resume</h1>
+        <h2 class="cursor-blink resume">My_resume</h2>
         <span class="cursor">_</span>
         <p class="question">Former jobs</p>
+        <article class="resume-view">
+          <div class="xp-1">
+            <div class="xp-1-t1">texte texte texte texte</div>
+            <div class="xp-1-t2">texte texte texte texte</div>
+            <div class="xp-1-t3">texte texte texte texte</div>
+          </div>
+          <div class="xp-2">
+            <div class="xp-2-t1">texte texte texte texte</div>
+            <div class="xp-2-t2">texte texte texte texte</div>
+          </div>
+        </article>
+        <div class="resume-btn">
+          <a href="https://www.linkedin.com/in/marie-collin-870b04106/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Morganefay" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a class="pink-button" href="images/Marie_Collin_CV.pdf" download>Download my resume</a>
+        </div>
       </div>
 
     </main>
@@ -268,36 +281,47 @@
 
        <section id="contact">
         <div id="intro">
-          <div class="larger" id="name"><span data-delay="1100">M</span><span data-delay="500">A</span><span data-delay="800">R</span><span data-delay="800">I</span><span class="darker visible" data-delay="0">E</span><span class="darker visible" data-delay="0">/</span><span class="darker visible" data-delay="0">C</span><span data-delay="1000">O</span><span data-delay="700">L</span><span data-delay="1300">L</span><span data-delay="1300">I</span><span data-delay="1300">N</span></div>
+          <div class="larger" id="name">
+            <span data-delay="1100">M</span>
+            <span data-delay="500">A</span>
+            <span data-delay="800">R</span>
+            <span data-delay="800">I</span>
+            <span class="darker visible" data-delay="0">E</span>
+            <span class="darker visible" data-delay="0">/</span>
+            <span class="darker visible" data-delay="0">C</span>
+            <span data-delay="1000">O</span>
+            <span data-delay="700">L</span>
+            <span data-delay="1300">L</span>
+            <span data-delay="1300">I</span>
+            <span data-delay="1300">N</span>
+          </div>
         </div>
+
         <div class="content">
-          <h1>Contact</h1>
           <div class="block"></div>
-          <form>
+          <form method="POST">
             <div class="row">
               <div class="six columns">
-                <label for="exampleRecipientInput">Name</label>
-                <input class="u-full-width" type="text">
+                <label for="firstName">Name</label>
+                <input class="u-full-width" type="text" name="firstName" id="firstName" required>
               </div>
               <div class="six columns">
-                <label for="exampleEmailInput">Email</label>
-                <input class="u-full-width" type="email">
+                <label for="email">Email</label>
+                <input class="u-full-width" type="email" name="email" id="email" required>
               </div>
             </div>
             <div class="row">
-              <label for="exampleMessage">Message</label>
-              <textarea class="u-full-width"></textarea>
-              <div class="submit">
-                <a>
-                  <span class="text">Submit</span>
-                  <span class="line -right"></span>
-                  <span class="line -top"></span>
-                  <span class="line -left"></span>
-                  <span class="line -bottom"></span>
-                </a>
-              </div>
+              <label for="message">Message</label>
+              <textarea class="u-full-width" name="message" id="message" required></textarea>
             </div>
-           
+            <div class="row submit-contact">
+              <div class="contact-box">
+                <input type="checkbox" id="case" required>
+                <label for="case">Agree<label></label>
+              </div>
+              <input type="submit" value="Send email"/>
+              <!--<p class="send">Your message is send !</p>-->
+            </div>
           </form>
         </div>
         
@@ -308,8 +332,6 @@
         <div class="nine columns">
           <p>Created with love by Marie.</p>
         </div>
-        <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
-      </div>
     </footer>
  
 
@@ -317,8 +339,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
       <script src="js/app.js"></script>
       <script src="js/nav.js"></script>
-      <script src="js/typeText.js"></script>
-      <script src="js/test.js"></script>
-      
+      <script src="js/typeText.js"></script>     
 </body>
 </html>

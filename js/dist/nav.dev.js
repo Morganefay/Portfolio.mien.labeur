@@ -59,14 +59,4 @@ TweenMax.staggerFrom(".heading", 0.8, {
   opacity: 0,
   y: 20,
   delay: 0.2
-}, 0.4); // fade logo
-
-$(document).ready(function () {
-  setTimeout(function () {
-    $("#name").removeClass("larger");
-    $("#name span").each(function () {
-      $(this).css("-webkit-transition-delay", $(this).data("delay") + "ms").css("transition-delay", $(this).data("delay") + "ms");
-      $(this).addClass("visible");
-    });
-  }, 1000);
-});
+}, 0.4);

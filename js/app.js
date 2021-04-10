@@ -368,3 +368,82 @@ function updateWindowSize() {
 }
 updateWindowSize();
 window.addEventListener("resize", updateWindowSize);
+
+// fade logo
+
+$(document).ready(function(){
+  
+    setTimeout(function(){
+      
+      $("#name").removeClass("larger");
+  
+      $("#name span").each(function(){
+        $(this).css("-webkit-transition-delay",$(this).data("delay")+"ms").css("transition-delay",$(this).data("delay")+"ms");
+        $(this).addClass("visible");
+      });
+      
+      }, 1000);    
+    
+  });
+/*const intro = document.querySelector('#name');
+let introHeight;
+
+document.addEventListener('scroll', () => {
+
+    introHeight = intro.offsetTop;
+
+    if(introHeight + 100 - window.innerHeight <= window.scrollY){
+        
+        setTimeout(function(){
+          
+          intro.classList.remove("larger");
+          
+          }, 1000);
+        
+      }
+    
+})*/
+
+// titles scroll animation
+const about = document.querySelector('.cursor-blink.about');
+const portfolio = document.querySelector('.cursor-blink.portfolio');
+const resume = document.querySelector('.cursor-blink.resume');
+
+let titleHeight;
+
+document.addEventListener('scroll', () => {
+    titleHeight = about.offsetTop;
+    
+    if(titleHeight + 100 - window.innerHeight <= window.scrollY ){
+        if(!about.classList.contains('animated')){
+            about.classList.add('animated')
+        }   
+    }else {
+        about.classList.remove('animated');
+    }
+})
+
+document.addEventListener('scroll', () => {
+    titleHeight = portfolio.offsetTop;
+    
+    if(titleHeight + 100 - window.innerHeight <= window.scrollY ){
+        if(!portfolio.classList.contains('animated')){
+            portfolio.classList.add('animated')
+        }   
+    }else {
+        portfolio.classList.remove('animated');
+    }
+})
+
+document.addEventListener('scroll', () => {
+    titleHeight = resume.offsetTop;
+    
+    if(titleHeight + 100 - window.innerHeight <= window.scrollY ){
+        if(!resume.classList.contains('animated')){
+            resume.classList.add('animated')
+        }   
+    }else {
+        resume.classList.remove('animated');
+    }
+})
+
