@@ -440,7 +440,7 @@ $("document").ready(function() {
 
 function handleTyping () {
   $(".element").typed({
-    strings: ["I'm a Web Developer", "a creative girl !", "this is my Portfolio,"],
+    strings: ["Développeuse Web,", "Créative et passionnée,", "Et voici mon Portfolio !"],
     typeSpeed: 50,
     starDelay: 200,
     backDelay: 600,

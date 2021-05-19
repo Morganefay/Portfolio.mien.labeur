@@ -26,10 +26,10 @@
       <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
       <nav>
         <ul>
-          <li><a class="smoothscroll" href="#header">Home</a></li>
-          <li><a class="smoothscroll" href="#about">About</a></li>
-          <li><a class="smoothscroll" href="#portfolio">Work</a></li>
-          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#header">Accueil</a></li>
+          <li><a class="smoothscroll" href="#about">&Agrave; Propos</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#resume">CV</a></li>
           <li><a class="smoothscroll" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -220,9 +220,9 @@
   </svg>
     <div id="home">
         <h1 class="presentation">
-          <p>Hi, my name is <strong class="middle-green-font">Marie Collin</strong></p>
-          <p>and <span class="element"></span></p>
-          <p>living in <strong class="middle-green-font">Aix en Provence</strong></p>
+          <p>Salut ! Je suis <strong class="middle-green-font">Marie Collin</strong></p>
+          <p><span class="element"></span></p>
+          <p>Basée à <strong class="middle-green-font">Aix en Provence</strong></p>
         </h1>
     </div>
 </header>
@@ -231,46 +231,38 @@
 
 <main>
       <div class="container" id="about">
-        <h2 class="cursor-blink about">About_me</h2>
+        <h2 class="cursor-blink about">&Agrave;_Propos</h2>
         <span class="cursor" >_</span>
-        <p class="question">Want to Know more about me ?</p>
+        
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
       </div>
 
       <div class="container">
         <h2 class="cursor-blink portfolio">Portfolio</h2>
         <span class="cursor">_</span>
-        <p class="question">Want to see my work ?</p>
+        
         <section id="portfolio">
 
-          <div class="singleProject"><img src="images/todo.png" class="image" alt="Work One"/></div>
-          <div class="singleProject"><a href="JeuDuMorpion/index.html"><img src="images/morpion.png" class="image" alt="Work Two"/></a></div>
-          <div class="singleProject"><img src="images/AppMétéo.png" class="image" alt="Work Three"/></div>
-          <div class="singleProject"><img src="images/Pomodoro.png" class="image" alt="Work Four"/></div>
-          <div class="singleProject"><img src="images/Memory.png" class="image" alt="Work Five"/></div>
-          <div class="singleProject"><img src="images/VisualiseurAudio.png" class="image" alt="Work Six"/></div>
+          <div class="singleProject"><a href="projets/todoApp/index.html"><img src="images/todo.png" class="image" alt="Work One"/></a></div>
+          <div class="singleProject"><a href="projets/JeuDuMorpion/index.html"><img src="images/morpion.png" class="image" alt="Work Two"/></a></div>
+          <div class="singleProject"><a href="projets/AppMétéo/index.html"><img src="images/AppMétéo.png" class="image" alt="Work Three"/></a></div>
+          <div class="singleProject"><a href="projets/Pomodoro/index.html"><img src="images/Pomodoro.png" class="image" alt="Work Four"/></a></div>
+          <div class="singleProject"><a href="projets/MemoryCard/index.html"><img src="images/Memory.png" class="image" alt="Work Five"/></a></div>
+          <div class="singleProject"><a href="projets/VisualisateurAudio/index.html"> <img src="images/VisualiseurAudio.png" class="image" alt="Work Six"/></a></div>
         </section>
       </div>  
         
       <div class="container" id="resume">
-        <h2 class="cursor-blink resume">My_resume</h2>
+        <h2 class="cursor-blink resume">Mon_CV</h2>
         <span class="cursor">_</span>
-        <p class="question">Former jobs</p>
+        
         <article class="resume-view">
-          <div class="xp-1">
-            <div class="xp-1-t1">texte texte texte texte</div>
-            <div class="xp-1-t2">texte texte texte texte</div>
-            <div class="xp-1-t3">texte texte texte texte</div>
-          </div>
-          <div class="xp-2">
-            <div class="xp-2-t1">texte texte texte texte</div>
-            <div class="xp-2-t2">texte texte texte texte</div>
-          </div>
+          <img src="resume.png" alt="test" class="resume-img">
         </article>
         <div class="resume-btn">
           <a href="https://www.linkedin.com/in/marie-collin-870b04106/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/Morganefay" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a class="pink-button" href="images/Marie_Collin_CV.pdf" download>Download my resume</a>
+          <a class="pink-button" href="images/Marie_Collin.pdf" download>Téléchargez mon CV</a>
         </div>
       </div>
 
@@ -302,7 +294,7 @@
           <form method="POST">
             <div class="row">
               <div class="six columns">
-                <label for="firstName">Name</label>
+                <label for="firstName">Identité</label>
                 <input class="u-full-width" type="text" name="firstName" id="firstName" required>
               </div>
               <div class="six columns">
@@ -317,7 +309,7 @@
             <div class="row submit-contact">
               <div class="contact-box">
                 <input type="checkbox" id="case" required>
-                <label for="case">Agree<label></label>
+                <label for="case"><small>J'accepte de transmettre mon email</small><label></label>
               </div>
               <input type="submit" value="Send email"/>
               <!--<p class="send">Your message is send !</p>-->
