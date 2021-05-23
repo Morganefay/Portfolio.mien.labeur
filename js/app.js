@@ -407,7 +407,7 @@ document.addEventListener('scroll', () => {
 // titles scroll animation
 const about = document.querySelector('.cursor-blink.about');
 const portfolio = document.querySelector('.cursor-blink.portfolio');
-const resume = document.querySelector('.cursor-blink.resume');
+const resume = document.querySelector('.cursor-blink.resume-title');
 
 let titleHeight;
 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/resume.css">
     
     <title>Marie Collin</title>
 </head>
@@ -234,7 +235,13 @@
         <h2 class="cursor-blink about">&Agrave;_Propos</h2>
         <span class="cursor" >_</span>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p><strong>HELLO WORLD !</strong> Je suis <strong>Marie</strong>, fraîchement diplômée du titre professionnel Développeur Web et Web Mobile.
+          Dans le cadre de cette reconversion professionnelle j’ai pu m'initier à différentes technologies, telles que : 
+          Javascript, CSS, Php, <strong>Symfony</strong>, Laravel, <strong>Angular</strong>… Et je commence à découvrir React.
+          Mon parcours personnel m’oriente plus vers le Front et son aspect créatif, mais j’ai pu découvrir avec plaisir le Back et sa rigueur !
+          Véritablement passionnée par ce nouveau métier, j’ai soif d’en apprendre toujours plus !
+          Voici quelques-unes de mes réalisations. <strong>Bonne visite</strong> !
+        </p>
       </div>
 
       <div class="container">
@@ -250,6 +257,7 @@
             </figcaption>
             <a href="projets/todoApp/index.html"></a>
           </figure>
+        
           <figure class="project ">
             <img src="images/morpion.png" class="image" alt="jeu du morpion"/>
             <figcaption>
@@ -292,15 +300,32 @@
           </figure>
         </section>
       
-
         
       <div class="container" id="resume">
-        <h2 class="cursor-blink resume">Mon_CV</h2>
+        <h2 class="cursor-blink resume-title">Mon_CV</h2>
         <span class="cursor">_</span>
         
-        <article class="resume-view">
-          <img src="resume.png" alt="test" class="resume-img">
-        </article>
+        <div class="resume">     
+          <div class="func">
+            <div class="work">
+              <h3><i class="fa fa-briefcase"></i>	&Eacute;xperiences</h3>
+              <ul>
+                <li><span>Développeur Front-end (stage)<br>MEDISYS - Aix</span><small>Fiserv</small><small>Juillet 2020 / Septembre 2020</small></li>
+                <li><span>Développeur FullStack (freelance)</span><small>Goûtte de lune</small><small>Décembre 2020 / Mars 2021</small></li>
+                <li><span>Responsable Magasin</span><small>Diverses enseignes</small><small>2009 - 2019</small></li>
+              </ul>
+            </div>
+            <div class="edu">
+              <h3><i class="fa fa-graduation-cap"></i>Formation</h3>
+              <ul>
+                <li><span>Titre pro Développeur Web<br>et Web Mobile</span><small>GRETA - Aix</small><small>Février 2020 / Avril 2021</small></li>
+                <li><span>MANAA</span><small>STUDIO M - Marseille</small><small>2006 - 2008</small></li>
+                <li><span>Baccalauréat L</span><small>Option Anglais renforcé</small><small>Juin 2005</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
         <div class="resume-btn">
           <a href="https://www.linkedin.com/in/marie-collin-870b04106/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/Morganefay" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -353,7 +378,7 @@
                 <input type="checkbox" id="case" required>
                 <label for="case"><small>J'accepte de transmettre mon email</small><label></label>
               </div>
-              <input type="submit" value="Send email"/>
+              <input type="submit" value="C'est parti !"/>
               <!--<p class="send">Your message is send !</p>-->
             </div>
           </form>

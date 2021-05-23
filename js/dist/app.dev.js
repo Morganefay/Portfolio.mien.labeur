@@ -273,7 +273,7 @@ document.addEventListener('scroll', () => {
 
 var about = document.querySelector('.cursor-blink.about');
 var portfolio = document.querySelector('.cursor-blink.portfolio');
-var resume = document.querySelector('.cursor-blink.resume');
+var resume = document.querySelector('.cursor-blink.resume-title');
 var titleHeight;
 document.addEventListener('scroll', function () {
   titleHeight = about.offsetTop;

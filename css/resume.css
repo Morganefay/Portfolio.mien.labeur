@@ -1,0 +1,148 @@
+#resume{
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #ffffff;
+  cursor: default;
+  font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .resume h3 {
+    color: #b659ec;
+    margin: 10px 0;
+    font-size: 2em;
+  }
+  .resume {
+    background: rgb(199, 142, 221);
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    box-shadow:60px -16px #8ca0c4;
+    position: relative;
+    display: flex;
+    
+  }
+  .resume .func {
+    box-sizing: border-box;
+    float: left;
+  }
+   .resume .func > div {
+    padding-bottom: 10px;
+  }
+  
+  .resume .func {
+    width: 100%;
+    padding: 30px;
+  }
+  .resume .func:hover > div {
+    transition-duration: 0.5s;
+  }
+  .resume .func:hover > div:hover h3 i {
+    transform: scale(1.25);
+  }
+  .resume .func:hover > div:not(:hover) {
+    opacity: 0.5;
+  }
+  .resume .func h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+  }
+  .resume .func h3 i {
+    color: #8ca0c4;
+    background: #ffffff;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+  .resume .func .work, .resume .func .edu {
+    float: left;
+  }
+  .resume .func .work small, .resume .func .edu small {
+    display: block;
+    opacity: 0.7;
+  }
+  .resume .func .work ul, .resume .func .edu ul {
+      margin-top: 20px;
+  }
+  .resume .func .work ul li, .resume .func .edu ul li {
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+  .resume .func .work ul li:hover::before, .resume .func .edu ul li:hover::before {
+    animation: circle 1.2s infinite;
+  }
+  .resume .func .work ul li:hover span, .resume .func .edu ul li:hover span {
+    color: #b659ec;
+  }
+  @keyframes circle {
+    from {
+      box-shadow: 0 0 0 0px #e70e9f;
+    }
+    to {
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+    }
+  }
+  .resume .func .work ul li:first-of-type::before, .resume .func .edu ul li:first-of-type::before {
+    width: 15px;
+    height: 15px;
+    left: -4px;
+  }
+  .resume .func .work ul li:last-of-type, .resume .func .edu ul li:last-of-type {
+    padding-bottom: 3px;
+  }
+  .resume .func .work ul li:last-of-type::after, .resume .func .edu ul li:last-of-type::after {
+    border-radius: 1.5px;
+  }
+  .resume .func .work ul li::before, .resume .func .work ul li::after, .resume .func .edu ul li::before, .resume .func .edu ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  .resume .func .work ul li::before, .resume .func .edu ul li::before {
+    width: 7px;
+    height: 7px;
+    border: 3px solid #ffffff;
+    background: #8ca0c4;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+  }
+  .resume .func .work ul li::after, .resume .func .edu ul li::after {
+    width: 3px;
+    height: 100%;
+    background: #ffffff;
+    left: 5px;
+    top: 0;
+  }
+  .resume .func .work ul li span, .resume .func .edu ul li span {
+    transition-duration: 0.3s;
+  }
+  .resume .func .work {
+    width: 45%;
+    background: #d7aef0;
+    padding: 15px;
+    margin: 0 4% 15px 0;
+  }
+  .resume .func .edu {
+    width: 45%;
+    background: #d7aef0;
+    padding: 15px;
+  }
+  
+  
