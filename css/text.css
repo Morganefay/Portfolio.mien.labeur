@@ -44,3 +44,16 @@
     font-size: 30px;
   }
   
+
+   /*****Media queries *****/
+  
+ @media (max-width: 665px) {
+   
+  .cursor-blink.animated {
+    animation: none;
+    font-size: 65px;
+  }
+  .cursor {
+    visibility: hidden;
+  }
+}

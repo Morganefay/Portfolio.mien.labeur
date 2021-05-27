@@ -44,7 +44,7 @@ try{
     //Envoie
     $mail->send();
     echo "Message envoyé";
-    header('Location: index.phtml');
+    header('Location: index.phtml?#contact');
 
 }catch (Exception $e) {
     echo "Message non envoyé. Error: {$mail->ErrorInfo}";

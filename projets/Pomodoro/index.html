@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>App Pomodoro</h1>
+    <main id="pomodoro">
+        <div id="container">
+            
+            <div id="timer">
+                
 
-        <div class="container">
-            <div class="travail">
-                <h4>Travail</h4>
-                <span class="affichageT"></span>
+                <div id="title">Prêt ?</div>
+                <div class="travail">
+                    <span class="affichageT"></span>
+                </div> 
+                
+                <div id="choice">
+                    <div id="start"><i class="fas fa-play"></i> Start</div>
+                    <div id="pause"><i class="fas fa-pause"></i> Pause</div>
+                    <div id="reset"><i class="fas fa-sync-alt"></i> Reset</div>
+                </div>
             </div>
-            <div class="repos">
-                <h4>Repos</h4>
-                <span class="affichageR"></span>
-            </div>
+            
+            
         </div>
-        <div class="choice">
-            <button class="btn-start">Commencer</button>
-            <button class="btn-pause">Pause</button>
-            <button class="btn-reset">Reset</button>
-        </div>
+        
         <h3></h3>
+        <div class="repos">
+            <h4>Repos</h4>
+            <span class="affichageR"></span>
+        </div>
+       
     </main>
 
       <script src="app.js"></script>

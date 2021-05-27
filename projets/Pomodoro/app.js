@@ -1,8 +1,8 @@
 const affichageT = document.querySelector('.affichageT');
 const affichageR = document.querySelector('.affichageR');
-const btnStart = document.querySelector('.btn-start');
-const btnPause = document.querySelector('.btn-pause');
-const btnReset = document.querySelector('.btn-reset');
+const btnStart = document.querySelector('#start');
+const btnPause = document.querySelector('#pause');
+const btnReset = document.querySelector('#reset');
 const cycles = document.querySelector('h3');
 const onglet = document.querySelector('title');
 

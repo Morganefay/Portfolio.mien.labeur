@@ -39,7 +39,7 @@ ul {
   
   .resume .func {
     width: 100%;
-    padding: 30px;
+    padding: 25px;
   }
   .resume .func:hover > div {
     transition-duration: 0.5s;
@@ -145,4 +145,20 @@ ul {
     padding: 15px;
   }
   
+    /*****Media queries *****/
   
+    @media (max-width: 1329px) {
+      .resume .func .work,  .resume .func .edu{
+        width: 90%;
+        margin: 3%;
+      }
+     
+    }
+    @media (max-width: 768px) {
+      .resume{
+        box-shadow: none;
+      }
+      .resume .func .work,  .resume .func .edu{
+        margin: 2%;
+      }
+    }

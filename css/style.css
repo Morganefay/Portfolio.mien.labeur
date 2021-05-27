@@ -296,6 +296,10 @@ a.pink-button {
 
 /* Contact Section
 ********************************************************************* */
+#contact{
+	margin-top: 25px;
+}
+
 input[type="email"], input[type="text"], textarea {
 	height: 38px;
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -365,6 +369,7 @@ footer p {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+
   /*****Media queries *****/
   
   @media (min-width: 1051px) {
@@ -379,29 +384,42 @@ footer p {
   }
   @media (min-width: 768px) and (max-width: 1049px) {
     header {
-        display: block;
+    	display: block;
     }
+	header svg , #home h1{
+		margin: 0 10%;
+	}
     #home h1 p {
-      font-size: 38px;
-      font-weight: 400;
+      	font-size: 38px;
+      	font-weight: 400;
     }
     #home h1 strong {
-      font-size: 42px;
+      	font-size: 42px;
     }
   }
   @media (min-width: 320px) and (max-width: 767px) {
     header {
         display: block;
     }
+	header svg , #home h1{
+		margin: 0 5%;
+	}
     #home h1 p {
-      font-size: 30px;
-      font-weight: 400;
+      	font-size: 28px;
+      	font-weight: 400;
     }
     #home h1 strong {
-      font-size: 34px;
+      	font-size: 30px;
     }
+	#about p {
+		text-align: justify;
+	}
+	input#case {
+		margin: 10px;
+	}
    
   }
+  
 
   @keyframes blink {
     0% {
