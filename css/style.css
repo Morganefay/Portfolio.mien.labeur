@@ -260,6 +260,42 @@ opacity: 0;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+/* Paint Section
+********************************************************************* */
+#paint {
+    background-color: #e0f0fb;
+}
+#draw {
+	background-color: white;
+	margin: auto 20%;
+	border: 5px solid  #484a55;
+	border-radius: 10px;
+}
+.paint-title{
+	text-align: center;
+	font-family: 'Raleway', Arial, sans-serif;
+	padding: 0 30px;
+	font-size: 35px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+	  color: #484a55;
+}
+.paint-container {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.paint-btn-group {
+	margin: 20px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.paint-text {
+    text-align: center;
+}
+
 /* Resume Section
 ********************************************************************* */
 #resume{
@@ -313,7 +349,7 @@ input[type="email"], input[type="text"], textarea {
 textarea {
 	min-height: 250px;
 }
-input[type="submit"], .pink-button {
+input[type="submit"], .pink-button , .paint-btn {
 	display: inline-block;
 	height: 38px;
 	padding: 0 30px;
@@ -332,7 +368,7 @@ input[type="submit"], .pink-button {
 	cursor: pointer;
 	box-sizing: border-box;
 }
-input[type="submit"]:hover, .pink-button:hover {
+input[type="submit"]:hover, .pink-button:hover , .paint-btn:hover {
 	background: #88a3c7;
 	text-decoration: none;
 	color: #fff;
@@ -381,7 +417,23 @@ footer p {
     #home h1 strong {
       font-size: 46px;
     }
+	
   }
+  @media (max-width: 1051px){
+	#paint{
+		margin: 0;
+	  }
+	#draw{
+		margin: auto 2%
+	}
+	.paint-container{
+		align-items: initial;
+	}
+	.paint-title{
+		font-size: 20px;
+	}
+  }
+
   @media (min-width: 768px) and (max-width: 1049px) {
     header {
     	display: block;
@@ -416,6 +468,9 @@ footer p {
 	}
 	input#case {
 		margin: 10px;
+	}
+	#paint{
+		display: none;
 	}
    
   }
