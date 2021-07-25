@@ -275,7 +275,7 @@
             <a href="projets/AppMétéo/index.html"></a>
           </figure>
           <figure class="project">
-            <img src="images/Pomodoro.png" class="image" alt="pomodoro"/>
+            <img src="images/pomodoro.png" class="image" alt="pomodoro"/>
             <figcaption>
               <h2>Pomodoro</h2>
               <p>Application de gestion du temps de travail en Javascript</p>
@@ -370,11 +370,15 @@
 
         <div class="content">
            
-          <form action="post_contact.php" method="POST">
+          <form action="https://formsubmit.co/44f581be083970229b28d7386059ae46" method="POST">
+            <input type="hidden" name="_subject" value="Nouveau message du Portfolio!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="https://cmarie.fr">
             <div class="row">
               <div class="six columns">
                 <label for="identity">Identité</label>
-                <input class="u-full-width" type="text" name="identity" id="identity" required>
+                <input class="u-full-width" type="text" name="name" id="identity" required>
               </div>
               <div class="six columns">
                 <label for="email">Email</label>
@@ -390,7 +394,7 @@
                 <input type="checkbox" id="case" required>
                 <label for="case"><small>J'accepte de transmettre mon email</small><label></label>
               </div>
-              <input type="submit" value="C'est parti !"/>
+              <button type="submit" id="contact-btn">C'est parti !</button>
               <!--<p class="send">Your message is send !</p>-->
             </div>
           </form>

@@ -349,7 +349,7 @@ input[type="email"], input[type="text"], textarea {
 textarea {
 	min-height: 250px;
 }
-input[type="submit"], .pink-button , .paint-btn {
+input[type="submit"], .pink-button , .paint-btn , #contact-btn{
 	display: inline-block;
 	height: 38px;
 	padding: 0 30px;
