@@ -368,7 +368,7 @@ input[type="submit"], .pink-button , .paint-btn , #contact-btn{
 	cursor: pointer;
 	box-sizing: border-box;
 }
-input[type="submit"]:hover, .pink-button:hover , .paint-btn:hover {
+input[type="submit"]:hover, .pink-button:hover , .paint-btn:hover ,#contact-btn:hover {
 	background: #88a3c7;
 	text-decoration: none;
 	color: #fff;
